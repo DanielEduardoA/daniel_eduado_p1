@@ -1,0 +1,25 @@
+#conteudo {
+    border: thin solid black;
+    height: 400px;
+    margin: auto;
+    width: 30%;
+}
+
+input {
+    margin-left: 10px;
+    width: 90%;
+}
+
+label {
+    margin-left: 10px;
+}
+
+.msgErro {
+    color: red;
+    margin-left: 10px;
+}
+
+#botoes {
+    margin-top: 15px;
+    text-align: center;
+}
