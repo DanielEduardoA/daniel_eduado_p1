@@ -28,13 +28,13 @@ function logarUsuario() {
     if (matricula.value == "") {
         conteudo.insertBefore(paragrafoCampoObrigatorioMatricula, matricula.nextSibling);
     } else if (matricula.value != "123456") {
-        conteudo.insertBefore(paragrafoCampoInvalido, botaoLogin.nextSibling);
+        conteudo.appendChild(paragrafoCampoInvalido);
     }
 
     if (senha.value == "") {
         conteudo.insertBefore(paragrafoCampoObrigatorioSenha, senha.nextSibling);
     } else if (senha.value != "123456") {
-        conteudo.insertBefore(paragrafoCampoInvalido, botaoLogin.nextSibling);
+        conteudo.appendChild(paragrafoCampoInvalido);
     }
 
     if (senha.value == "123456" && matricula.value == "123456") {
@@ -46,7 +46,7 @@ function logarUsuario() {
 }
 
 function limparMensagemErro() {
-	var conteudo = document.getElementById("conteudo");
+    var conteudo = document.getElementById("conteudo");
     var msgErroCampoObrigatorioSenha = document.getElementById("paragrafoCampoObrigatorioSenha");
     var msgErroCampoObrigatorioMatricula = document.getElementById("paragrafoCampoObrigatorioMatricula");
     var msgErroCampoInvalido = document.getElementById("paragrafoCampoInvalido");
