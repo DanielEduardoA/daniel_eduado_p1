@@ -46,6 +46,7 @@ function logarUsuario() {
 }
 
 function limparMensagemErro() {
+	var conteudo = document.getElementById("conteudo");
     var msgErroCampoObrigatorioSenha = document.getElementById("paragrafoCampoObrigatorioSenha");
     var msgErroCampoObrigatorioMatricula = document.getElementById("paragrafoCampoObrigatorioMatricula");
     var msgErroCampoInvalido = document.getElementById("paragrafoCampoInvalido");
